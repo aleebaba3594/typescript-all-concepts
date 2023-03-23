@@ -1,0 +1,36 @@
+
+Major Difference between js and ts
+Js uses "dynamic types"(resolved at runtime) but ts uses "static types"(set during development).
+
+-> The core primitive types in TypeScript are all lowercase!
+-> Important: It is string and number (etc.), NOT String, Number etc.
+
+-> errors can be seen on compilation time rather than on runtime(execution).
+-> Js checks types during runtime(execution) but Ts checks types during compilation time 
+   which means ts types only helps during development before code gets compiled.
+-> superset of JS (with js all features + advanced features)
+-> A programming language made by microsoft.
+-> ts is programming language because we have a compiler(tsc) which converts tsc to js.
+-> browser and node cant run typescript, it can run js, so, we write ts and the typescript compiler(tsc)
+   will convert all ts code into plain js. So, we can run that code.
+-> Interfaces and Generics are non-js features can only be used in ts files.
+-> ts also provides Meta-programming features like decorators.
+-> ts also provides Tuple type which is a special type in ts.A tuple type is a type that represents an
+   array with a fixed number of elements of specific types,defined using square brackets [] and the
+   types of the elements are separated by commas. 
+   example  let value: [string, number] = ["hello", 123];
+
+Type casting:
+Type casting can be done in two ways in TypeScript
+1) let someValue: any = "hello";
+   let strLength: number = (someValue as string).length;
+2) let someValue: any = "hello";
+   let strLength: number = (<string>someValue).length;
+
+
+
+Core Types 
+number,string,boolean,object,Array,Tuple
+
+packages 
+npm install -g ts-node
