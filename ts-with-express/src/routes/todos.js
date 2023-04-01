@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var midellewares_1 = require("./TodoMidellewares/midellewares");
+var router = (0, express_1.Router)();
+router.post("/", midellewares_1.handlePost);
+router.get("/", midellewares_1.handleGet);
+router.put("/:id", midellewares_1.handleUpdate);
+router.delete("/:id", midellewares_1.handleDel);
+exports.default = router;
